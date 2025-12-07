@@ -17,11 +17,11 @@ export async function POST(request: Request) {
   try {
     // Initializing the SMTP connection
     const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST ,
-      port: process.env.SMTP_PORT,
+      host: process.env.SMTP_HOST!,
+      port: process.env.SMTP_PORT as unknown as number,
       auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS,
+        user: process.env.SMTP_USER!,
+        pass: process.env.SMTP_PASS!,
       },
     });
  
