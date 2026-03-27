@@ -2,12 +2,7 @@
 import ContactForm from "@/components/contact-form";
 import ServiceCard from "@/components/service-card";
 import { categories, services } from "@/lib/services";
-import {
-  ArrowRight,
-  Award,
-  CheckCircle,
-  Users
-} from "lucide-react";
+import { ArrowRight, Award, CheckCircle, Users } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export default function Homepage() {
@@ -30,7 +25,50 @@ export default function Homepage() {
     { value: "100%", label: "Satisfação" },
   ];
 
-
+  const whyChoseUs = [
+    {
+      icon: CheckCircle,
+      title: "Experiência Comprovada",
+      description: (
+        <>
+          Nossa atuação em planejamento urbano, ambiental e institucional é
+          sustentada por <b>experiência prática em municípios reais</b>, com
+          elaboração de planos, diagnósticos, anteprojetos de lei, estudos
+          territoriais e instrumentos de gestão pública alinhados às normas
+          federais, estaduais e às especificidades locais.
+        </>
+      ),
+    },
+    {
+      icon: Users,
+      title: "Equipe Especializada",
+      description: (
+        <>
+          A qualidade de um plano, diagnóstico ou instrumento legal depende
+          diretamente <b>da competência técnica de quem o elabora.</b> Por isso,
+          nossa atuação é conduzida por uma <b>equipe multidisciplinar</b>,
+          formada por profissionais com experiência prática em planejamento
+          urbano, gestão ambiental, infraestrutura, legislação urbanística e
+          políticas públicas municipais.
+        </>
+      ),
+    },
+    {
+      icon: Award,
+      title: "Resultados Garantidos",
+      description: (
+        <>
+          Garantir resultados, no contexto do planejamento urbano e da gestão
+          pública municipal, significa{" "}
+          <b>entregar instrumentos que funcionam na prática</b> — técnica, legal
+          e administrativamente. Nossos trabalhos são concebidos para sair do
+          papel e se tornarem referência operacional dentro do Poder Público,
+          apoiando decisões, viabilizando recursos e estruturando políticas
+          públicas duradouras.
+        </>
+      ),
+    },
+  ];
 
   const servicesByCategory = (categoryName: string) => {
     return services.filter((s) => s.category === categoryName);
@@ -119,26 +157,7 @@ export default function Homepage() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: CheckCircle,
-                title: "Experiência Comprovada",
-                description:
-                  "Mais de 20 anos de atuação no mercado de planejamento urbano e arquitetura",
-              },
-              {
-                icon: Users,
-                title: "Equipe Especializada",
-                description:
-                  "Profissionais qualificados e certificados para atender suas necessidades",
-              },
-              {
-                icon: Award,
-                title: "Resultados Garantidos",
-                description:
-                  "Projetos entregues com qualidade, dentro do prazo e do orçamento",
-              },
-            ].map((item, index) => (
+            {whyChoseUs.map((item, index) => (
               <div
                 key={index}
                 className="group p-8 bg-gradient-to-br from-orange-50 to-white rounded-2xl border border-orange-100 hover:shadow-xl hover:shadow-orange-500/10 transition-all duration-300"
@@ -192,6 +211,9 @@ export default function Homepage() {
                       <div
                         className={`h-1 bg-gradient-to-r ${category.color} rounded-full`}
                       ></div>
+                    </div>
+                    <div className={`text-zinc-500 mt-2 font-semibold `}>
+                      {category.description}
                     </div>
                   </div>
 

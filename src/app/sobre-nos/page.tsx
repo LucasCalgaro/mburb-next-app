@@ -8,6 +8,78 @@ export const metadata: Metadata = {
 };
 
 export default function About() {
+  const oursValues = [
+    {
+      icon: Award,
+      title: "Excelência",
+      description: (
+        <>
+          Para nossa empresa, é o compromisso permanente com o mais alto padrão
+          técnico na elaboração de planos, projetos, diagnósticos e instrumentos
+          legais voltados à gestão municipal. A excelência é um princípio
+          contínuo, presente em todas as etapas do trabalho — do diagnóstico
+          inicial à entrega final — garantindo que cada produto represente {""}
+          <b>
+            segurança técnica, confiabilidade e valor duradouro para a gestão
+            pública.
+          </b>
+        </>
+      ),
+    },
+    {
+      icon: Users,
+      title: "Colaboração",
+      description: (
+        <>
+          É o princípio que orienta a forma como desenvolvemos cada trabalho: de
+          maneira integrada, participativa e alinhada à realidade administrativa
+          do município. Acreditamos que planos, projetos e instrumentos legais
+          só alcançam efetividade quando são construídos em{" "}
+          <b>
+            diálogo com a equipe técnica da prefeitura, gestores, conselhos e
+            comunidade
+          </b>
+          , incorporando conhecimento local ao rigor técnico.
+        </>
+      ),
+    },
+    {
+      icon: Target,
+      title: "Inovação",
+      description: (
+        <>
+          É aplicar novas metodologias, tecnologias e abordagens ao planejamento
+          urbano e à gestão municipal, sempre com foco na{" "}
+          <b>eficiência, precisão técnica e aplicabilidade prática</b>. Para
+          nós, inovar não é apenas utilizar ferramentas modernas, mas{" "}
+          <b>
+            aperfeiçoar continuamente a forma de diagnosticar, planejar e
+            estruturar o território
+          </b>
+          , traduzindo conhecimento técnico em soluções mais inteligentes para o
+          município. Inovar é fazer o planejamento evoluir junto com as
+          necessidades do território e da gestão municipal.
+        </>
+      ),
+    },
+    {
+      icon: Heart,
+      title: "Sustentabilidade",
+      description: (
+        <>
+          É o princípio que orienta nossas decisões técnicas para que cada
+          plano, projeto ou instrumento legal contribua para o equilíbrio entre
+          desenvolvimento urbano, proteção ambiental e qualidade de vida. No
+          contexto municipal, sustentabilidade significa{" "}
+          <b>planejar o território com responsabilidade intergeracional</b>,
+          reduzindo impactos, prevenindo riscos e promovendo o uso eficiente dos
+          recursos naturais. Sustentabilidade é planejar hoje o território que
+          as próximas gerações irão viver.
+        </>
+      ),
+    },
+  ];
+
   return (
     <div className="bg-white">
       {/* Hero Section */}
@@ -49,36 +121,38 @@ export default function About() {
               </h2>
               <div className="space-y-4 text-neutral-600 leading-relaxed">
                 <p>
-                  A MBUrb Planejamento e Consultoria é uma empresa formada por
-                  uma equipe multidisciplinar de profissionais com vasta
-                  experiência. Atua na elaboração de projetos e serviços
-                  técnicos de Engenharia e Arquitetura, no desenvolvimento de
-                  Planos de Gestão de Cidades, em Projetos na área de Saneamento
-                  Básico e Ambiental, na implementação de projetos utilizando
-                  soluções de Geotecnologia em organizações públicas e privadas.
+                  Fundada em <b>2003</b>, nossa empresa atua de forma contínua
+                  no{" "}
+                  <b>
+                    planejamento urbano e regional, arquitetura pública e gestão
+                    ambiental municipal
+                  </b>
+                  , desenvolvendo planos, diagnósticos e instrumentos legais que
+                  se convertem em <b>ferramentas reais</b> de gestão dentro das
+                  prefeituras.
                 </p>
                 <p>
-                  Dentro de um enfoque único e de uma abordagem precisa, nossos
-                  consultores elaboram projetos e diagnósticos fidedignos das
-                  reais necessidades de cada cliente, implementando ideias e
-                  soluções inovadoras para obtenção de resultados planejados.
+                  Ao longo de mais de duas décadas, consolidamos um método
+                  próprio de trabalho:{" "}
+                  <b>
+                    leitura técnica do território, integração com dados oficiais
+                    e tradução em documentos executáveis
+                  </b>
+                  , compatíveis com a estrutura administrativa e a legislação
+                  vigente.
+                </p>
+                <p className="font-bold text-base">
+                  Experiência que se traduz em segurança para o gestor público
                 </p>
                 <p>
-                  Fundada em 2003, a MBUrb tem como premissa estabelecer uma
-                  relação transparente entre sua equipe e o cliente,
-                  ajustando-se com a cultura de cada organização e garantindo um
-                  atendimento personalizado.
+                  Desde 2003, acompanhamos a evolução das exigências legais,
+                  ambientais e urbanísticas, adaptando nossos métodos às novas
+                  demandas sem perder o foco na <b>aplicabilidade prática.</b>
                 </p>
                 <p>
-                  De acordo com o contrato social, os seus objetivos são:
-                  Consultoria em Tecnologia da Informação; Soluções em
-                  Geotecnologia; Imagens de alta resolução e Implantação de
-                  Sistema de Informações Geográficas - SIG Corporativo; Serviços
-                  Técnicos em Engenharia e Arquitetura; Consultoria em Gestão
-                  Ambiental; Consultoria e Assessoria Empresarial; Consultoria e
-                  Assessoria em Administração Pública; Desenvolvimento,
-                  Treinamento e Qualificação Profissional; Pesquisa de Mercado e
-                  de Opinião Pública.
+                  Essa trajetória oferece ao gestor a segurança de contar com
+                  uma equipe que <b>conhece a realidade municipal</b>, suas
+                  limitações e suas potencialidades.
                 </p>
               </div>
             </div>
@@ -96,33 +170,8 @@ export default function About() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                icon: Award,
-                title: "Excelência",
-                description:
-                  "Compromisso com qualidade e resultados superiores em cada projeto",
-              },
-              {
-                icon: Users,
-                title: "Colaboração",
-                description:
-                  "Trabalho em equipe e parceria próxima com nossos clientes",
-              },
-              {
-                icon: Target,
-                title: "Inovação",
-                description:
-                  "Soluções criativas e tecnologias de ponta para desafios complexos",
-              },
-              {
-                icon: Heart,
-                title: "Sustentabilidade",
-                description:
-                  "Desenvolvimento urbano consciente e responsável com o meio ambiente",
-              },
-            ].map((value, idx) => (
+          <div className="grid md:grid-cols-2 gap-8">
+            {oursValues.map((value, idx) => (
               <div
                 key={idx}
                 className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow"
@@ -160,7 +209,7 @@ export default function About() {
                 <div className="md:col-span-1">
                   <div className="aspect-square rounded-full overflow-hidden shadow-xl">
                     <img
-                      src="/marcia.png"
+                      src="/marcia2.png"
                       alt="Marcia Bounassar"
                       className="w-full h-full object-cover"
                     />

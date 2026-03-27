@@ -6,6 +6,7 @@ import { Mail, Menu, Phone } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -63,7 +64,14 @@ export default function Navbar() {
           <div className="flex items-center gap-4 ">
             <p>CAU A11950-4</p>
             <p>(43) 3017-4219</p>
-            <p>(43) 99191-4219</p>
+            <Link
+              href="https://api.whatsapp.com/send?phone=5543991914219"
+              className="flex items-center gap-1"
+              target="_blank"
+            >
+              (43) 99191-4219
+              <FaWhatsapp size={16} color="#fff" />
+            </Link>
             <p>contato@mburb.com.br</p>
           </div>
         </div>
@@ -71,7 +79,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href={"/"} className="flex items-center gap-3 group">
+          <Link href={"/"} className="flex items-center">
             <img src="/logo.png" alt="MBUrb Logo" className="h-12" />
           </Link>
 

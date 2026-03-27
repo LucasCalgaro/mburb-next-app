@@ -17,11 +17,55 @@ import {
 } from "lucide-react";
 
 export const categories = [
-  { name: "Arquitetura", color: "from-orange-500 to-red-500" },
-  { name: "Planejamento Urbano", color: "from-blue-500 to-cyan-500" },
-  { name: "Saneamento", color: "from-green-500 to-emerald-500" },
-  { name: "Sustentabilidade", color: "from-purple-500 to-pink-500" },
-  { name: "Geotecnologia", color: "from-orange-500 to-amber-500" },
+  {
+    name: "Arquitetura",
+    color: "from-orange-500 to-red-500",
+    description:
+      "Atuamos em projetos arquitetônicos que vão desde edificações públicas e " +
+      "habitação social até a qualificação de espaços urbanos, sempre integrando " +
+      "técnica, legislação, conforto ambiental e aplicabilidade à realidade municipal.",
+  },
+  {
+    name: "Planejamento Urbano",
+    color: "from-blue-500 to-cyan-500",
+    description:
+      "No Planejamento Urbano e Regional aplicado à realidade municipal, os produtos " +
+      "técnicos se materializam em planos, programas e instrumentos legais que estruturam " +
+      "a gestão do território, orientam investimentos e dão base normativa às decisões públicas.",
+  },
+  {
+    name: "Saneamento",
+    color: "from-green-500 to-emerald-500",
+    description:
+      "O saneamento básico constitui um dos pilares estruturantes da organização " +
+      "urbana e da saúde pública, refletindo diretamente na qualidade de vida da " +
+      "população, na preservação ambiental e na eficiência da gestão municipal. " +
+      "Compreendendo os eixos de abastecimento de água potável, esgotamento sanitário, " +
+      "limpeza urbana e manejo de resíduos sólidos, além da drenagem e manejo das águas " +
+      "pluviais, o saneamento integra infraestrutura, planejamento territorial e políticas públicas permanentes.",
+  },
+  {
+    name: "Sustentabilidade",
+    color: "from-purple-500 to-pink-500",
+    description:
+      "Os Planos de Sustentabilidade estruturam diretrizes, metas e ações para integrar " +
+      "desenvolvimento urbano, proteção ambiental e eficiência no uso de recursos naturais. " +
+      "No âmbito municipal, esses planos orientam decisões de curto, médio e longo prazo, " +
+      "conectando território, infraestrutura e políticas públicas com foco em resiliência " +
+      "climática, qualidade de vida e responsabilidade intergeracional. A sustentabilidade, " +
+      "nesse contexto, deixa de ser um conceito abstrato e passa a orientar instrumentos " +
+      "práticos de gestão, incorporados ao planejamento urbano, às obras públicas e à legislação local.",
+  },
+  {
+    name: "Geotecnologia",
+    color: "from-orange-500 to-amber-500",
+    description:
+      " A geotecnologia é a base técnica que permite compreender o território com precisão, " +
+      "integrar dados espaciais e transformar informação geográfica em ferramenta estratégica " +
+      "para o planejamento municipal. Por meio de Sistemas de Informação Geográfica (SIG), " +
+      "sensoriamento remoto, aerolevantamentos e cartografia temática, estruturamos bases " +
+      "territoriais confiáveis que sustentam diagnósticos, planos, projetos e instrumentos legais.",
+  },
 ];
 
 export const services = [
@@ -113,6 +157,20 @@ export const services = [
           união do projeto com todos os outros elementos complementares que o
           compõem.
         </p>
+        <p className="mb-4 font-semibold">
+          Atuamos em projetos arquitetônicos que vão desde edificações públicas
+          e habitação social até a qualificação de espaços urbanos, sempre
+          integrando técnica, legislação, conforto ambiental e aplicabilidade à
+          realidade municipal.
+        </p>
+        <div className="ml-4">
+          <p>• Projetos de Arquitetura Institucional </p>
+          <p>• Prefeituras e Centros Administrativos </p>
+          <p>• Unidades Básicas de Saúde (UBS) e equipamentos de saúde </p>
+          <p>• Escolas municipais, CMEIs e centros educacionais </p>
+          <p>• Centros comunitários, CRAS, espaços de atendimento social </p>
+          <p>• Sedes de secretarias e departamentos públicos</p>
+        </div>
       </>
     ),
   },
@@ -414,6 +472,38 @@ export const services = [
     ),
   },
   {
+    slug: "plano-de-arborizacao-urbana",
+    name: "Plano de Arborização Urbana",
+    category: "Planejamento Urbano",
+    icon: <Trees className="text-orange-500" />,
+    banner: "/servicos/plano-de-arborizacao-urbana.jpg",
+    description: (
+      <>
+        <p className="mb-4">
+          A <b className="text-orange-600">arborização urbana</b> exerce
+          inúmeras funções ambientais e socioambientais, dentre elas a
+          manutenção e ampliação das Áreas Verdes Urbanas, a proteção de
+          diversas espécies da fauna e a tutela do bem-estar e da qualidade de
+          vida das presentes e futuras gerações de populações das cidades, razão
+          pela qual se apresenta evidente o seu caráter de bem difuso e a sua
+          inserção como tema prioritário de atuação do Ministério Público.
+        </p>
+        <p className="mb-4">
+          A arborização de ruas desempenha inúmeras funções no meio urbano, tais
+          como: ecológicas -melhoria do microclima, atenuação da poluição
+          atmosférica e sonora, conservação da biodiversidade local (fauna e
+          flora), entre outros; estéticas –identidade local, sensação de
+          continuidade entre os componentes urbanos, contraste harmônico do
+          concreto e asfalto com a árvore, adiciona dinamismo à paisagem urbana,
+          entre outros; e sociais – amenização do estresse psicológico, conforto
+          térmico, benefício econômico pela valorização imobiliária, educação
+          ambiental e melhoria na qualidade de vida da população nas cidades
+          (BIONDI &amp; ALTHAUS, 2005).
+        </p>
+      </>
+    ),
+  },
+  {
     slug: "plano-de-mobilidade-urbana",
     name: "Plano de Mobilidade Urbana",
     category: "Planejamento Urbano",
@@ -657,38 +747,7 @@ export const services = [
       </>
     ),
   },
-  {
-    slug: "plano-de-arborizacao-urbana",
-    name: "Plano de Arborização Urbana",
-    category: "Sustentabilidade",
-    icon: <Trees className="text-orange-500" />,
-    banner: "/servicos/plano-de-arborizacao-urbana.jpg",
-    description: (
-      <>
-        <p className="mb-4">
-          A <b className="text-orange-600">arborização urbana</b> exerce
-          inúmeras funções ambientais e socioambientais, dentre elas a
-          manutenção e ampliação das Áreas Verdes Urbanas, a proteção de
-          diversas espécies da fauna e a tutela do bem-estar e da qualidade de
-          vida das presentes e futuras gerações de populações das cidades, razão
-          pela qual se apresenta evidente o seu caráter de bem difuso e a sua
-          inserção como tema prioritário de atuação do Ministério Público.
-        </p>
-        <p className="mb-4">
-          A arborização de ruas desempenha inúmeras funções no meio urbano, tais
-          como: ecológicas -melhoria do microclima, atenuação da poluição
-          atmosférica e sonora, conservação da biodiversidade local (fauna e
-          flora), entre outros; estéticas –identidade local, sensação de
-          continuidade entre os componentes urbanos, contraste harmônico do
-          concreto e asfalto com a árvore, adiciona dinamismo à paisagem urbana,
-          entre outros; e sociais – amenização do estresse psicológico, conforto
-          térmico, benefício econômico pela valorização imobiliária, educação
-          ambiental e melhoria na qualidade de vida da população nas cidades
-          (BIONDI &amp; ALTHAUS, 2005).
-        </p>
-      </>
-    ),
-  },
+
   {
     slug: "plano-de-recuperacao-de-areas-degradadas",
     name: "Plano de Recuperação de Áreas Degradadas",
