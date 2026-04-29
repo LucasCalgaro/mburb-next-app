@@ -199,7 +199,7 @@ export default function About() {
               Liderança
             </h2>
             <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-              Conheça quem está à frente da UrbanPlan
+              Conheça quem está à frente da MBUrb.
             </p>
           </div>
 

@@ -107,7 +107,7 @@ export const services = [
   },
   {
     slug: "projetos-arquitetonicos",
-    name: "Projetos Arquitetônicos",
+    name: "Projetos Arquitetonicos",
     category: "Arquitetura",
     icon: <Building className="text-orange-500" />,
     banner: "/servicos/projetos-arquitetonicos.jpg",
@@ -164,13 +164,39 @@ export const services = [
           realidade municipal.
         </p>
         <div className="ml-4">
-          <p>• Projetos de Arquitetura Institucional </p>
-          <p>• Prefeituras e Centros Administrativos </p>
-          <p>• Unidades Básicas de Saúde (UBS) e equipamentos de saúde </p>
-          <p>• Escolas municipais, CMEIs e centros educacionais </p>
-          <p>• Centros comunitários, CRAS, espaços de atendimento social </p>
-          <p>• Sedes de secretarias e departamentos públicos</p>
+          <b className="text-orange-600">• Projetos de Arquitetura Institucional: </b>
+          <p>✓ Prefeituras e Centros Administrativos </p>
+          <p>✓ Unidades Básicas de Saúde (UBS) e equipamentos de saúde </p>
+          <p>✓ Escolas municipais, CMEIs e centros educacionais </p>
+          <p>✓ Centros comunitários, CRAS, espaços de atendimento social </p>
+          <p>✓ Sedes de secretarias e departamentos públicos</p>
         </div>
+        <img src="/arquitetura-1.jpg" alt="Projetos de Arquitetura Institucional" className="my-4 w-full md:w-2/3 rounded-xl h-auto" />
+        <div className="ml-4">
+          <b className="text-orange-600">• Projetos de Arquitetura Urbana e Espaços Públicos: </b>
+          <p>✓ Praças, parques e áreas de lazer</p>
+          <p>✓ Requalificação de espaços públicos</p>
+          <p>✓ Terminais rodoviários e pontos de transporte</p>
+          <p>✓ Calçadas acessíveis e desenho urbano (ruas completas)</p>
+          <p>✓ Mobiliário urbano e paisagismo</p>
+        </div>
+        <img src="/arquitetura-2.jpg" alt="Projetos de Arquitetura Urbana e Espaços Públicos" className="my-4 w-full md:w-2/3 rounded-xl h-auto" />
+        <div className="ml-4 ">
+          <b className="text-orange-600">• Projetos Sustentáveis e Resilientes:</b>
+          <p>✓ Arquitetura bioclimática</p>
+          <p>✓ Soluções baseadas na natureza (jardins de chuva, pavimentos permeáveis)</p>
+          <p>✓ Eficiência energetica e conforto ambiental</p>
+          <p>✓ Estratégias de adaptação e resiliência climática no projeto</p>
+        </div>
+        <img src="/arquitetura-3.jpg" alt="Projetos Sustentáveis e Resilientes" className="my-4 w-full md:w-2/3 rounded-xl h-auto" />
+        <div className="ml-4 ">
+          <b className="text-orange-600">• Projetos de Reparo, Requalificação e Patrimônio:</b>
+          <p>✓ Restauro de edificações históricas</p>
+          <p>✓ Requalificação de prédios públicos existentes</p>
+          <p>✓ Adaptação de uso de edificações antigas</p>
+          <p>✓ Valorização do patrimônio arquitetônico local</p>
+        </div>
+        <img src="/arquitetura-4.jpg" alt="Projetos de Reparo, Requalificação e Patrimônio" className="my-4 w-full md:w-2/3 rounded-xl h-auto" />
       </>
     ),
   },
