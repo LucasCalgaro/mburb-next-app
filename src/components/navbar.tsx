@@ -2,11 +2,11 @@
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { navigationItems } from "@/lib/navigation-items";
-import { Mail, Menu, Phone } from "lucide-react";
+import { Phone } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { FaHamburger, FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import { FaBars, FaInstagram, FaLinkedin } from "react-icons/fa6";
 
 export default function Navbar() {
@@ -45,7 +45,7 @@ export default function Navbar() {
         : "bg-transparent"
         } ${hideNav ? "-translate-y-full" : "translate-y-0"}`}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 md:block hidden">
         <div className="flex items-center justify-between h-8 text-white text-xs font-semibold font-sans">
           <div className="flex items-center gap-2">
             <p className="">Siga-nos:</p>
@@ -83,7 +83,7 @@ export default function Navbar() {
               (43) 99191-4219
               <FaWhatsapp size={16} color="#fff" />
             </Link>
-            <Link href="mailto:contato@mburb.com.br" className="flex items-center gap-1">
+            <Link href="mailto:contato@mburb.com.br" className="flex  items-center gap-1">
               <p>contato@mburb.com.br</p>
             </Link>
           </div>
@@ -163,6 +163,29 @@ export default function Navbar() {
                   >
                     contato@mburb.com.br
                   </Link>
+                  <div className="flex items-center gap-3">
+                    <p className="">Siga-nos:</p>
+                    <Link href="https://www.facebook.com/MBurb.com.br" target="_blank">
+                      <svg
+                        className="bg-white fill-gray-600 rounded p-0.5"
+                        height="20px"
+                        width="20px"
+                        version="1.1"
+                        id="Layer_1"
+                        viewBox="-337 273 123.5 256"
+
+                      >
+                        <path d="M-260.9,327.8c0-10.3,9.2-14,19.5-14c10.3,0,21.3,3.2,21.3,3.2l6.6-39.2c0,0-14-4.8-47.4-4.8c-20.5,0-32.4,7.8-41.1,19.3  c-8.2,10.9-8.5,28.4-8.5,39.7v25.7H-337V396h26.5v133h49.6V396h39.3l2.9-38.3h-42.2V327.8z" />
+                      </svg>
+                    </Link>
+                    <Link href="https://www.instagram.com/mbconsultoriaeplanejamento/" target="_blank">
+
+                      <FaInstagram size={20} color="#fff" />
+                    </Link>
+                    <Link href="https://www.linkedin.com/in/m%C3%A1rcia-bounassar-24528323/" target="_blank">
+                      <FaLinkedin size={20} color="#fff" />
+                    </Link>
+                  </div>
                 </div>
               </div>
             </SheetContent>

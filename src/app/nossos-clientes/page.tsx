@@ -23,7 +23,7 @@ export default function Clients() {
 
       const stateMatch = searchState === "all" || client.state === searchState;
 
-      return cityMatch && stateMatch;
+      return cityMatch && stateMatch && client.city !== "";
     });
   }, [searchCity, searchState]);
 
