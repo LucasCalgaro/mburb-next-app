@@ -108,7 +108,7 @@ export default function About() {
             <div className="relative">
               <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="/marcia-apresentacao.jpg"
+                  src="/marcia-apresentacao-2.png "
                   alt="Nossa equipe"
                   className="w-full h-full object-cover"
                 />
@@ -187,6 +187,19 @@ export default function About() {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+      <section className="py-24 bg-gradient-to-br from-neutral-50 to-[#FFF5F0]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
+              Nosso Compromisso
+            </h2>
+            <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
+              Transformar conhecimento técnico em soluções públicas concretas, estruturando o território, qualificando a gestão e deixando como legado documentos que permanecem úteis por muitos anos.<br/>
+Mais que tempo de mercado, entregamos tempo de experiência aplicado ao território.
+            </p>
           </div>
         </div>
       </section>
