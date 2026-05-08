@@ -196,7 +196,7 @@ export default function About() {
             <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
               Nosso Compromisso
             </h2>
-            <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
+            <p className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow w-1/2 mx-auto text-lg text-neutral-900">
               Transformar conhecimento técnico em soluções públicas concretas, estruturando o território, qualificando a gestão e deixando como legado documentos que permanecem úteis por muitos anos.<br/>
 Mais que tempo de mercado, entregamos tempo de experiência aplicado ao território.
             </p>
