@@ -72,6 +72,12 @@ export const clientes = [
         "image": "/clientes/astorga-pr.png"
     },
     {
+        "name": "Barra Do Bugres",
+        "state": "MT",
+        "city": "Barra Do Bugres",
+        "image": "/clientes/barra-do-bugres-mt.png"
+    },
+    {
         "name": "Barra Do Jacaré",
         "state": "PR",
         "city": "Barra Do Jacaré",
