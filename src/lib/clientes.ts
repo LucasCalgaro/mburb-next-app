@@ -156,6 +156,12 @@ export const clientes = [
         "image": "/clientes/cruzeiro-do-oeste-pr.png"
     },
     {
+        "name": "Cubatão",
+        "state": "SP",
+        "city": "Cubatão",
+        "image": "/clientes/cubatao-sp.png"
+    },
+    {
         "name": "Diamante D’ Oeste",
         "state": "PR",
         "city": "Diamante D’ Oeste",
